@@ -1,3 +1,20 @@
 input {
-    width : 150px;
+    width: 20px;
+    box-shadow: 0 0 1 1;
+    border: 1;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+}
+
+.titulo{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
 }
