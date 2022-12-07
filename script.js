@@ -80,7 +80,7 @@ $(document).ready(
                         };
 
                         function linha(possibilidade1, lin, col, valor) {
-                            for (j in linha) {
+                            for (let j = 0; j < 8; j++) {
                                 if (j !== col) {
                                     if (possibilidade1[lin][j] === valor) {
                                         return false;
@@ -92,7 +92,7 @@ $(document).ready(
                         }
                         function coluna(possibilidade1, lin, col, valor) {
 
-                            for (i in coluna) {
+                            for (let i = 0; i < 8; i++) {
                                 if (i !== lin) {
                                     if (possibilidade1[i][col] === valor) {
                                         return false;
