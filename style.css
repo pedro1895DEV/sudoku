@@ -56,3 +56,7 @@ input {
     float: right;
     background-color: rgb(24, 139, 233);
 }
+
+.odd-section {
+    background: #d3d3d3;
+}
