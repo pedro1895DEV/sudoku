@@ -15,8 +15,12 @@ Projeto realizado durante as aulas da disciplina PPI-I com o intuito de praticar
 - JavaScript
 - JQuery
 
-## Autor
+## Autores
 
 Pedro Paulo Martins de Andrade
 
 https://www.linkedin.com/in/pedro-martins-1895v
+
+Júlio Simplício do Nascimento Neto
+
+https://www.linkedin.com/in/j%C3%BAlio-neto-4342731a0/
