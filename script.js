@@ -118,10 +118,10 @@ $(document).ready(
                             return true;
                         }
                         function nove(possibilidade1, lin, col, valor) {
-                            const startRow = lin - (lin % 3), startCol = col - (col % 3);
+                            const iniLinha = lin - (lin % 3), iniColuna = col - (col % 3);
 
-                            for (let i = startRow; i < startRow + 3; i++) {
-                                for (let j = startCol; j < startCol + 3; j++) {
+                            for (let i = iniLinha; i < iniLinha + 3; i++) {
+                                for (let j = iniColuna; j < iniColuna + 3; j++) {
                                     if (i !== lin && j !== col) {
                                         if (possibilidade1[i][j] === valor) {
                                             return false;
