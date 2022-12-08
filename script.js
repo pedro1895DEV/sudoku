@@ -1,13 +1,3 @@
-/*function sudoku(){
-    let array = ['','','','','','','','','',]
-    for(let i =1; i <=9; i++){
-        for(let j =1; j<=9; i++){
-            return array
-        }
-    }
-}
-*/
-
 let possibilidade1 = [
     ['5', '3', '', '', '7', '', '', '', ''],
     ['6', '', '', '1', '9', '5', '', '', ''],
@@ -19,6 +9,18 @@ let possibilidade1 = [
     ['', '', '', '4', '1', '9', '', '', '5'],
     ['', '', '', '', '8', '', '', '7', '9']
 ];
+
+let resposta1 = [
+    [ '5', '3', '4',  '6', '7', '8',  '9', '1', '2' ],
+    [ '6', '7', '2',  '1', '9', '5',  '3', '4', '8' ],
+    [ '1', '9', '8',  '3', '4', '2',  '5', '6', '7' ],
+    [ '8', '5', '9',  '7', '6', '1',  '4', '2', '3' ],
+    [ '4', '2', '6',  '8', '5', '3',  '7', '9', '1' ],
+    [ '7', '1', '3',  '9', '2', '4',  '8', '5', '6' ],
+    [ '9', '6', '1',  '5', '3', '7',  '2', '8', '4' ],
+    [ '2', '8', '7',  '4', '1', '9',  '6', '3', '5' ],
+    [ '3', '4', '5',  '2', '8', '6',  '1', '7', '9' ],
+  ];
 
 let possibilidade2 = [
     ['', '', '', '', '', '', '', '', ''],
@@ -44,7 +46,11 @@ let possibilidade3 = [
     ['', '', '', '', '', '', '', '', '']
 ];
 
-
+function sorteia(){
+    let array = ['a','b','c'];
+    let random = (min, max) => Math.floor(Math.random() * (max - min));
+    return array[ random(0, array.length)]
+}
 
 $(document).ready(
     function () {
@@ -64,7 +70,16 @@ $(document).ready(
                         let valor = el.val();
                         possibilidade1[lin - 1][col - 1] = valor;
 
+                        function jogoCompleto(possibilidade1) {
+                            if(possibilidade1===resposta1){
+                                return true;
+                            }
+                        }
 
+                        if(jogoCompleto(possibilidade1)){
+                            alert('Você completou o desafio')
+                        }
+                       
                         function valida(possibilidade1) {
                             for (let i = 0; i < 9; i++) {
                                 for (let j = 0; j < 9; j++) {
@@ -88,7 +103,7 @@ $(document).ready(
                                 }
                             }
 
-                            return true;
+                            return true ;
                         }
                         function coluna(possibilidade1, lin, col, valor) {
 
