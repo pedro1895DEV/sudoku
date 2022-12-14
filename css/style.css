@@ -60,3 +60,20 @@ input {
 .odd-section {
     background: #d3d3d3;
 }
+
+#win-screen {
+    width: 500px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 300px;
+    display: none;
+}
+
+#reset {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 50px;
+    width: 200px;
+    font-size: 2rem;
+}
+
