@@ -46,7 +46,6 @@
     ];
 
     let choose = Math.floor(Math.random()*4) -1;
-
     let s = sudoku[choose];
 
     $(document).ready(
